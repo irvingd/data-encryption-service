@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>DESCLI</AssemblyName>
+    <RootNamespace>DataEncryptionService.CLI</RootNamespace>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Description>The description goes here</Description>
+    <Product>Data Encryption Service CLI Tool</Product>
+    <Authors>Irving De la Cruz</Authors>
+    <Company></Company>
+    <Version>1.0.2</Version>
+    <PackageId>DESCLI</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj" />
+    <ProjectReference Include="..\DataEncryptionService.Core\DataEncryptionService.Core.csproj" />
+    <ProjectReference Include="..\DataEncryptionService.Integration.MongoDB\DataEncryptionService.Integration.MongoDB.csproj" />
+    <ProjectReference Include="..\DataEncryptionService.Integration.Vault\DataEncryptionService.Integration.Vault.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

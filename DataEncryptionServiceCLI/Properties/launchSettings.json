@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DataEncryptionServiceCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "-a ROTATEKEY -s data_encrypt_service -n dev_key"
+    }
+  }
+}

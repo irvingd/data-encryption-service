@@ -1,0 +1,92 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Verbose",
+            "Microsoft": "Warning",
+            "Microsoft.Hosting.Lifetime": "Information"
+        }
+    },
+    "AllowedHosts": "*",
+
+    "Storage": {
+        "ConnectionString": "mongodb://localhost:27017/?readPreference=primary&ssl=false"
+    },
+
+    "Encryption": {
+        "DefaultEngine": "519c0525-e5d0-408f-8540-dae11c1563c3",
+        "aes DefaultEngine": "c87aa1e4-5f97-4a33-8d5a-798835dcb7b1",
+        "3des DefaultEngine": "163b02dd-9e94-45c2-a52c-a0533dbbf706",
+
+        "ActiveKeys": {
+            "c87aa1e4-5f97-4a33-8d5a-798835dcb7b1": "aes_key_2020-10-01",
+            "163b02dd-9e94-45c2-a52c-a0533dbbf706": "3des_key_2020-10-01"
+        },
+        "KeyConfigurations": [
+            {
+                "Name": "aes_key_2020-10-01",
+                "Key": "Ng0KqZV0Ktkcy7ReOEclujrqUMe4+Yg0KVF+9SjrvPQ=",
+                "IV": "kPCPfmEQY/JpTJWk0mCrww=="
+            },
+            {
+                "Name": "3des_key_2020-10-01",
+                "Key": "XmhrcnTExxlnS7EBMNu9ws9bUDr8HYY5",
+                "IV": "e4ga/xehKj8="
+            },
+            {
+                "Name": "aes_key_2020-10-30",
+                "Key": "iCe1RgLItjSdXwYU2AQrge6un7gFR1uMmTL8qtjs7N4=",
+                "IV": "GWr4+h0R+YbuTNs4LjypLg=="
+            },
+            {
+                "Name": "3des_key_2020-10-30",
+                "Key": "c2h8h+dL9GevCjfxnKKuJgl6YqpT7Cft",
+                "IV": "4oVG9RVRKlw="
+            }
+        ],
+        "EngineConfigurations": [
+            {
+                "EngineId": "519c0525-e5d0-408f-8540-dae11c1563c3",
+                "Parameters": {
+                    "DefaultKeyName": "dev_key",
+                    "DefaultMountPoint": "data_encrypt_service",
+
+                    "xxxDefaultKeyName": "dev_key",
+                    "xxxDefaultMountPoint": "transit",
+
+                    "yyyDefaultKeyName": "default_dev_key",
+                    "yyyDefaultMountPoint": "transit",
+
+                    "zzzDefaultKeyName": "datahub_key",
+                    "zzzDefaultMountPoint": "datahub_encryption"
+                }
+            }
+        ]
+    },
+
+    "VaultService": {
+        "ServiceUrl": "http://linux02:8200",
+        "AuthMethod": "userpass",
+        "Parameters": {
+            "UserName": "data-encryption-service-account",
+            "Password": "des_acct_password"
+        }
+    },
+
+    "Telemetry": {
+        "AppSourceName": "Data Encryption Service API",
+        "Sinks": {
+            "MongoDB": {
+                "ConnectionString": "mongodb://localhost:27017/?readPreference=primary&ssl=false",
+                "Database": "Telemetry",
+                "Collection": "DataEncryptionServiceWebApi"
+            }
+        }
+    },
+
+    "Policies": {
+        "API": {
+            "RequiredTokenPolicies": [ "datahub_v1_read" ],
+            "TokenCacheTTL":  300
+        }
+    }
+}
