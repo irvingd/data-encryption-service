@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\VaultSharp-master\src\VaultSharp\VaultSharp.csproj" />
+    <ProjectReference Include="..\..\..\VaultSharp-master\src\VaultSharp\VaultSharp.csproj" />
     <ProjectReference Include="..\DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj" />
     <ProjectReference Include="..\DataEncryptionService.Core\DataEncryptionService.Core.csproj" />
     <ProjectReference Include="..\DataEncryptionService.Integration.MongoDB\DataEncryptionService.Integration.MongoDB.csproj" />

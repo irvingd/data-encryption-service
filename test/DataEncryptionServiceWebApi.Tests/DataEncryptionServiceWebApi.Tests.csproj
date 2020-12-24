@@ -19,8 +19,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DataEncryptionServiceWebApi\DataEncryptionServiceWebApi.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -23,11 +23,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj" />
-    <ProjectReference Include="..\DataEncryptionService.Core\DataEncryptionService.Core.csproj" />
-    <ProjectReference Include="..\DataEncryptionService.Integration.MongoDB\DataEncryptionService.Integration.MongoDB.csproj" />
-    <ProjectReference Include="..\DataEncryptionService.Integration.MySql\DataEncryptionService.Integration.MySql.csproj" />
-    <ProjectReference Include="..\DataEncryptionService.Integration.Vault\DataEncryptionService.Integration.Vault.csproj" />
+    <ProjectReference Include="..\..\..\VaultSharp-master\src\VaultSharp\VaultSharp.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Core\DataEncryptionService.Core.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Integration.MongoDB\DataEncryptionService.Integration.MongoDB.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Integration.Mssql\DataEncryptionService.Integration.Mssql.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Integration.MySql\DataEncryptionService.Integration.MySql.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Integration.Postgresql\DataEncryptionService.Integration.Postgresql.csproj" />
+    <ProjectReference Include="..\..\src\DataEncryptionService.Integration.Vault\DataEncryptionService.Integration.Vault.csproj" />
   </ItemGroup>
 
 </Project>

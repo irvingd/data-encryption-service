@@ -24,7 +24,7 @@ namespace DataEncryptionService.Tests.StorageProviders
 
             var config = new DataEncryptionServiceConfiguration();
             config.Storage.StorageProvider = WellKnownConstants.MongoDB.StorageProviderUUID;
-            config.Storage.ConnectionString = _connectionString;
+            config.Storage.MongoDbConnectionString = _connectionString;
 
             string collectionName = $"EncryptedData_(tests_on_{System.Net.Dns.GetHostName()})";
             config.Storage.EncryptedDataSetName = collectionName;
@@ -32,7 +32,7 @@ namespace DataEncryptionService.Tests.StorageProviders
             _sut = new MongoDbDataStorage(config, TestLogger.GetLogger<MongoDbDataStorage>());
 
             InitializeMongoDbCollection(
-                    config.Storage.ConnectionString,
+                    config.Storage.MongoDbConnectionString,
                     config.Storage.DataStoreName,
                     config.Storage.EncryptedDataSetName);
         }
@@ -130,7 +130,7 @@ namespace DataEncryptionService.Tests.StorageProviders
             // Arrange
             var config = new DataEncryptionServiceConfiguration();
             config.Storage.StorageProvider = WellKnownConstants.MongoDB.StorageProviderUUID;
-            config.Storage.ConnectionString = _connectionString;
+            config.Storage.MongoDbConnectionString = _connectionString;
 
             // Create a new unique name for the collection
             string collectionName = $"EncryptedData_(tests_on_{Guid.NewGuid().ToString("N")})";

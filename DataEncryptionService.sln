@@ -3,29 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30524.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Core", "DataEncryptionService.Core\DataEncryptionService.Core.csproj", "{329ACA50-46AB-4B6F-AADB-2725569A0A55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Core", "src\DataEncryptionService.Core\DataEncryptionService.Core.csproj", "{329ACA50-46AB-4B6F-AADB-2725569A0A55}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Tests", "DataEncryptionService.Tests\DataEncryptionService.Tests.csproj", "{71940649-29EE-4206-A95C-601AB1441BDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Tests", "test\DataEncryptionService.Tests\DataEncryptionService.Tests.csproj", "{71940649-29EE-4206-A95C-601AB1441BDF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaultSharp", "..\VaultSharp-master\src\VaultSharp\VaultSharp.csproj", "{3518DFA7-3CDF-4561-894A-E0AC83800869}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionServiceWebApi", "DataEncryptionServiceWebApi\DataEncryptionServiceWebApi.csproj", "{4BE5731D-A4E3-49F3-8835-C173D73391C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionServiceWebApi", "src\DataEncryptionServiceWebApi\DataEncryptionServiceWebApi.csproj", "{4BE5731D-A4E3-49F3-8835-C173D73391C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionServiceCLI", "DataEncryptionServiceCLI\DataEncryptionServiceCLI.csproj", "{F9BDDD41-E1D0-4C8B-85EF-4F22D07745FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionServiceCLI", "src\DataEncryptionServiceCLI\DataEncryptionServiceCLI.csproj", "{F9BDDD41-E1D0-4C8B-85EF-4F22D07745FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionServiceWebApi.Tests", "DataEncryptionServiceWebApi.Tests\DataEncryptionServiceWebApi.Tests.csproj", "{552C5228-D0F1-47AC-83C1-A38360196809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionServiceWebApi.Tests", "test\DataEncryptionServiceWebApi.Tests\DataEncryptionServiceWebApi.Tests.csproj", "{552C5228-D0F1-47AC-83C1-A38360196809}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Abstractions", "DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj", "{129C0856-D1CE-4CA4-A6B7-580A07D4FBFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Abstractions", "src\DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj", "{129C0856-D1CE-4CA4-A6B7-580A07D4FBFC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.MongoDB", "DataEncryptionService.Integration.MongoDB\DataEncryptionService.Integration.MongoDB.csproj", "{79EB6AE0-8A55-4DB5-BBF5-8C3E45F6279D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.MongoDB", "src\DataEncryptionService.Integration.MongoDB\DataEncryptionService.Integration.MongoDB.csproj", "{79EB6AE0-8A55-4DB5-BBF5-8C3E45F6279D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.MySql", "DataEncryptionService.Integration.MySql\DataEncryptionService.Integration.MySql.csproj", "{9BAE1A89-47EB-4A57-B777-0A859ED8515E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.MySql", "src\DataEncryptionService.Integration.MySql\DataEncryptionService.Integration.MySql.csproj", "{9BAE1A89-47EB-4A57-B777-0A859ED8515E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.Vault", "DataEncryptionService.Integration.Vault\DataEncryptionService.Integration.Vault.csproj", "{0818EDCB-2CE7-4BE2-91AF-1E4BBC717473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.Vault", "src\DataEncryptionService.Integration.Vault\DataEncryptionService.Integration.Vault.csproj", "{0818EDCB-2CE7-4BE2-91AF-1E4BBC717473}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.Mssql", "DataEncryptionService.Integration.Mssql\DataEncryptionService.Integration.Mssql.csproj", "{E2C8F62E-5946-44A4-A14E-3B28895E275D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.Mssql", "src\DataEncryptionService.Integration.Mssql\DataEncryptionService.Integration.Mssql.csproj", "{E2C8F62E-5946-44A4-A14E-3B28895E275D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.Postgresql", "DataEncryptionService.Integration.Postgresql\DataEncryptionService.Integration.Postgresql.csproj", "{92093EC2-F499-494C-916C-2D5045CAF42A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataEncryptionService.Integration.Postgresql", "src\DataEncryptionService.Integration.Postgresql\DataEncryptionService.Integration.Postgresql.csproj", "{92093EC2-F499-494C-916C-2D5045CAF42A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

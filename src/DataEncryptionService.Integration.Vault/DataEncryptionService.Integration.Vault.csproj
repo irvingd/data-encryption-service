@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\VaultSharp-master\src\VaultSharp\VaultSharp.csproj" />
+    <ProjectReference Include="..\..\..\VaultSharp-master\src\VaultSharp\VaultSharp.csproj" />
     <ProjectReference Include="..\DataEncryptionService.Abstractions\DataEncryptionService.Abstractions.csproj" />
   </ItemGroup>
 
